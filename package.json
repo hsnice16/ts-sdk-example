@@ -4,11 +4,13 @@
   "description": "TypeScript SDK Example",
   "main": "index.js",
   "scripts": {
+    "docs": "typedoc",
     "test": "vitest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "typedoc": "0.25.13",
     "typescript": "^5.8.3",
     "vitest": "^3.1.1"
   }

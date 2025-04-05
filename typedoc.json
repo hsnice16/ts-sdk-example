@@ -1,0 +1,6 @@
+{
+  "name": "TS SDK Example",
+  "includeVersion": true,
+  "entryPoints": ["src/index.ts"],
+  "exclude": ["**/*+(.test|.spec|.e2e).ts"]
+}
