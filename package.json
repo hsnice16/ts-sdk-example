@@ -26,6 +26,10 @@
     "example"
   ],
   "scripts": {
+    "build": "yarn run clean && yarn run build:cjs && yarn run build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "clean": "rm -rf dist",
     "docs": "typedoc",
     "test": "vitest"
   },

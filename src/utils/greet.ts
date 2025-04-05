@@ -1,4 +1,4 @@
-import { MsgFunction } from "../types";
+import { MsgFunction } from "../types.js";
 
 export { addGreetToMsg };
 
