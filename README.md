@@ -12,7 +12,7 @@ npm install ts-sdk-example
 
 ## Usage
 
-You can use `addGreetToMsg` function to get a function that you can call to add that particular greeting to every message, you call that function with.
+You can use the `addGreetToMsg` function to get a function that you can call to add that particular greeting to every message, you call that function with.
 
 ```ts
 import { addGreetToMsg } from "ts-sdk-example";
