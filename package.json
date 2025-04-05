@@ -2,7 +2,29 @@
   "name": "ts-sdk-example",
   "version": "1.0.0",
   "description": "TypeScript SDK Example",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "source": "./src/index.ts",
+  "files": [
+    "dist/cjs",
+    "dist/esm",
+    "dist/types"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "keywords": [
+    "sdk",
+    "typescript",
+    "ts",
+    "example"
+  ],
   "scripts": {
     "docs": "typedoc",
     "test": "vitest"
@@ -13,5 +35,10 @@
     "typedoc": "0.25.13",
     "typescript": "^5.8.3",
     "vitest": "^3.1.1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsnice16/ts-sdk-example.git"
   }
 }
